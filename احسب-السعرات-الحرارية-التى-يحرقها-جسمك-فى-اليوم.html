@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap-5.min.css">
+    <title>حاسبة معدل حرق السعرات الحرارية فى اليوم</title>
+</head>
+<body>
+         <!-- nav bar start -->
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">الحاسبات الطبية</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="احسب-السعرات-الحرارية-التى-يحرقها-جسمك-فى-اليوم.html">حاسبة السعرات الحرارية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="الجدول-الصينى-لتحديد-جنس-الطفل.html">حاسبة تحديد جنس المولود</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الحمل-وموعد-الولادة.html">حاسبة موعد الولادة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الدورة-الشهرية.html">حاسبة الدورة الشهرية</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="حاسبة-تخمين-موعد-الولادة.html"> تحمين موعد الولادة </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="حايبة-السعرات-الحرارية-المطلوبة-فى-اليوم.html">السعرات الحرارية المطلوبة فى يوم</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  <!-- nav bar end  -->
+     <img src="./img/" alt="">
+       <div class="container">
+
+        <h2 class="text-center mt-1">احسب السعات الحرارية التى يحرقها جسمك فى اليوم</h2>
+           <div class="row">
+               <div class="col-sm-4">
+
+               </div>
+               <div class="col-sm-4 mt-4">
+
+                        <div class="from-group m-1">
+                        <select name="gender" id="gender" class="form-control"required>
+                            --اختر الجنس--
+                            <option value="male">ذكر</option>
+                            <option value="female">انثى</option>
+                        </select>
+                    </div>
+                      <div class="from-group m-1">
+                        <input type="number" id="weight" placeholder="اكتب الوزن بالكيلو جرام" class="form-control" required>
+                    </div>
+                     <div class="from-group m-1">
+                        <input type="number"  id="height" class="form-control" placeholder="الارتفاع بالسنتميترات" required>
+                    </div>
+                    <div class="from-group m-1">
+                        <input type="number"  id="age" class="form-control" placeholder="العمر بالسنوات" required>
+                    </div>
+
+                    <div class="from-group m-1">
+                        <select name="act" id="act" class="form-control">
+                           
+                            <option value="1.2">لا امارس الرياضة او بشكل قليل</option>
+                            <option value="1.375">تمارين خفيفة من 1-3 ايام فى الاسبوع </option>
+                            <option value="1.55">معتدل من 3-5 ايام فى الاسبوع</option>
+                            <option value=" 1.725">رياضى من 6-7 ايام فى الاسبوع </option>
+                            <option value="1.9">نشط جدا من 6-7 ايام فى السبوع</option>
+                        </select>
+                    </div>
+
+                    <div class="from-group m-1">
+                       <button type="button"id="calc" class="form-control btn btn-secondary">احسب</button>
+                    </div>
+                    <div class="from-group m-1" id="out" class=" h4 text-bold text-center">
+                       
+                    </div>
+
+               </div>
+               <div class="col-sm-4">
+
+               </div>
+           </div>
+       </div>
+   
+    
+       <script src="./js/how-many-calories-do-i-need-each-day.js"></script>
+</body>
+</html>

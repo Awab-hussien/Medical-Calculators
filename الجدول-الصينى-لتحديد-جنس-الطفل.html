@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap-5.min.css">
+  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+   
+
+  </style>
+  <title>حاسبه تحديد جنس المولود</title>
+</head>
+<body>
+       <!-- nav bar start -->
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">الحاسبات الطبية</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="احسب-السعرات-الحرارية-التى-يحرقها-جسمك-فى-اليوم.html">حاسبة السعرات الحرارية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="الجدول-الصينى-لتحديد-جنس-الطفل.html">حاسبة تحديد جنس المولود</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الحمل-وموعد-الولادة.html">حاسبة موعد الولادة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الدورة-الشهرية.html">حاسبة الدورة الشهرية</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="حاسبة-تخمين-موعد-الولادة.html"> تحمين موعد الولادة </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="حايبة-السعرات-الحرارية-المطلوبة-فى-اليوم.html">السعرات الحرارية المطلوبة فى يوم</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  <!-- nav bar end  -->
+         
+  </div>
+
+
+
+       <div class="container">
+        <div class="row">
+    
+
+          <div class="col"><h2 class="h2 mt-3 text-center">الجدول الصيني لتحديد جنس المولود </h2></div>
+          <h5 class="h4 mt-3 text-center">يجب التنويه ان هذا الاختبار لايمت للعلم بلصه ونسبة نجاحه وخطئه هي %50 </h5>
+        </div>
+        
+       </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+      </div>
+      <div class="col mt-5">
+
+        <from>
+        
+        <input type="number" class="form-control" placeholder="العمر" id="age" min="18" max="45" required>
+      
+        
+        <input type="number" max="12" min="1" class="form-control" placeholder="اخر شهر" id="month" required>
+       
+        
+        <button type="button" class="btn btn-secondary mt-3 btn-block" id="btn">احسب</button>
+     
+        <div id="out" class="text-center h2"></div>
+      </from>
+
+
+      </div>
+      <div class="col">
+        <p class=" text-center" id="out"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/moment.js"></script>
+  <script src="./js/chinese-gender-predictor.js"></script>
+
+</body>
+</html>

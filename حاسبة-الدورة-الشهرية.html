@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap-5.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>حاسبة الدورة الشهرية</title>
+</head>
+<body>
+     <!-- nav bar start -->
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">الحاسبات الطبية</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="احسب-السعرات-الحرارية-التى-يحرقها-جسمك-فى-اليوم.html">حاسبة السعرات الحرارية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="الجدول-الصينى-لتحديد-جنس-الطفل.html">حاسبة تحديد جنس المولود</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="حاسبة-الحمل-وموعد-الولادة.html">حاسبة موعد الولادة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="حاسبة-الدورة-الشهرية.html">حاسبة الدورة الشهرية</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="حاسبة-تخمين-موعد-الولادة.html"> تحمين موعد الولادة </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="حايبة-السعرات-الحرارية-المطلوبة-فى-اليوم.html">السعرات الحرارية المطلوبة فى يوم</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <!-- nav bar end  -->
+
+<!--  -->
+
+ 
+
+
+<!-- start  containt-->
+<div class="container">
+  <div class="row">
+   <div class="col"></div>
+
+       <div class="col">
+              <!-- center -->
+       <form  method="post" class="m-1">
+            
+<!--  -->
+        
+<div class="form-group">
+  <label for="comment">تاريخ بداية الحيض</label>
+  <input class="form-control" type="date" id="start">
+</div>
+<!--  -->
+
+        <div class="form-group">
+          <label for="sel1">عدد ايام الحيض</label>
+          <select class="form-control m-1" id="numberofday">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+<!--  -->
+<div class="form-group">
+  <label for="sel1">عدد ايام الدورة الشهرية</label>
+  <select class="form-control m-1" id="number">
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+  </select>
+</div>
+
+<!--  -->
+          <input type="button" value="احسب"class="from-control btn btn-secondary" id="calc">
+
+          <p id="out" class=" text-center text-bold"></p>
+       </form>
+    
+     <!-- center -->
+
+
+
+       </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+
+<!-- end containt -->
+
+<!-- <script src="./js/moment.js"></script> -->
+<script src="./js/cicle.js"></script>
+</body>
+</html>

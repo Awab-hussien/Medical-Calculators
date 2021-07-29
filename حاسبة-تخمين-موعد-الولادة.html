@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة موعد الولادة </title>
+    <link rel="stylesheet" href="./css/bootstrap-5.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+     <!-- nav bar start -->
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">الحاسبات الطبية</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="احسب-السعرات-الحرارية-التى-يحرقها-جسمك-فى-اليوم.html">حاسبة السعرات الحرارية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="الجدول-الصينى-لتحديد-جنس-الطفل.html">حاسبة تحديد جنس المولود</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الحمل-وموعد-الولادة.html">حاسبة موعد الولادة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="حاسبة-الدورة-الشهرية.html">حاسبة الدورة الشهرية</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="حاسبة-تخمين-موعد-الولادة.html"> تحمين موعد الولادة </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="حايبة-السعرات-الحرارية-المطلوبة-فى-اليوم.html">السعرات الحرارية المطلوبة فى يوم</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  <!-- nav bar end  -->
+
+    <img src="./img/birthday.jpg">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center mt-3">متى سوف تلدين؟</h2>
+            <p class="text-center text-bold h3">
+              
+ احسبي موعد الولادة المرتقب لحملك وشاهدي كيف يتطور جنينك الان
+            
+                </p>
+                <p class="text-center text-bold h3">
+                    اليوم الأول من موعد الحيض (الدورة الشهرية) الأخير
+                </p>
+            <div class="col">
+
+            </div>
+            <div class="col mt-5">
+                    <div class="from-group">
+                <input type="date" placeholder="التاريخ" id="date" class="form-control mb-5">
+                    </div>
+                    <div class="from-group">
+                 <button type="button" id="calc" class="btn btn-secondary form-control">احسب</button>
+                </div>
+                        <div id="out" class="text-center mt-3 h3"></div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+     
+     <script src="./js/moment.js"></script>
+     <!-- <script src="./js/chinese-gender-predictor.js"> </script> -->
+
+      <script>
+            let calc = document.getElementById('calc');
+
+            calc.addEventListener('click',function(){
+            let d = document.getElementById('date');
+                c = d.value;
+                out = moment(c).add(280, 'day').format('LLL');
+                document.getElementById('out').innerHTML = out;
+            });
+      </script>
+</body>
+
+</html>
